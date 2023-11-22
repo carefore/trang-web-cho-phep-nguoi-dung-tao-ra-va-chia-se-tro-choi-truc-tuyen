@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tạo và Chia Sẻ Trò Chơi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Tạo và Chia Sẻ Trò Chơi</h1>
+
+  <form id="gameForm" action="process.php" method="post">
+    <label for="gameName">Tên Trò Chơi:</label>
+    <input type="text" id="gameName" name="gameName" required><br><br>
+
+    <label for="gameDescription">Mô Tả Trò Chơi:</label><br>
+    <textarea id="gameDescription" name="gameDescription" required></textarea><br><br>
+
+    <label for="creatorName">Tên Người Tạo:</label>
+    <input type="text" id="creatorName" name="creatorName" required><br><br>
+
+    <input type="submit" value="Tạo Trò Chơi">
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
